@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC6BAD8B25563F5800B4DC32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BAD8A25563F5800B4DC32 /* AppDelegate.swift */; };
+		DC6BAD8D25563F5800B4DC32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BAD8C25563F5800B4DC32 /* SceneDelegate.swift */; };
+		DC6BAD8F25563F5800B4DC32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BAD8E25563F5800B4DC32 /* ContentView.swift */; };
+		DC6BAD9225563F5800B4DC32 /* AdventureMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC6BAD9025563F5800B4DC32 /* AdventureMap.xcdatamodeld */; };
+		DC6BAD9425563F5A00B4DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6BAD9325563F5A00B4DC32 /* Assets.xcassets */; };
+		DC6BAD9725563F5A00B4DC32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6BAD9625563F5A00B4DC32 /* Preview Assets.xcassets */; };
+		DC6BAD9A25563F5A00B4DC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6BAD9825563F5A00B4DC32 /* LaunchScreen.storyboard */; };
+		DC6BADA525563F5A00B4DC32 /* AdventureMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BADA425563F5A00B4DC32 /* AdventureMapTests.swift */; };
+		DC6BADB025563F5A00B4DC32 /* AdventureMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BADAF25563F5A00B4DC32 /* AdventureMapUITests.swift */; };
+		DCC90D992556401F008CFFF9 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90D982556401F008CFFF9 /* GooglePlaces.framework */; };
+		DCC90D9B25564039008CFFF9 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90D9A25564039008CFFF9 /* GoogleMapsBase.framework */; };
+		DCC90D9D2556409C008CFFF9 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCC90D9C2556409C008CFFF9 /* GooglePlaces.bundle */; };
+		DCC90DA3255640AD008CFFF9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DA2255640AD008CFFF9 /* Accelerate.framework */; };
+		DCC90DA5255640B5008CFFF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DA4255640B5008CFFF9 /* CoreData.framework */; };
+		DCC90DA7255640BE008CFFF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DA6255640BE008CFFF9 /* CoreGraphics.framework */; };
+		DCC90DA9255640C5008CFFF9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DA8255640C5008CFFF9 /* CoreImage.framework */; };
+		DCC90DAB255640D3008CFFF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DAA255640D3008CFFF9 /* CoreLocation.framework */; };
+		DCC90DAD255640DB008CFFF9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DAC255640DB008CFFF9 /* CoreTelephony.framework */; };
+		DCC90DAF255640E1008CFFF9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DAE255640E1008CFFF9 /* CoreText.framework */; };
+		DCC90DB1255640E8008CFFF9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DB0255640E8008CFFF9 /* GLKit.framework */; };
+		DCC90DB3255640F3008CFFF9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DB2255640F3008CFFF9 /* ImageIO.framework */; };
+		DCC90DB5255640FB008CFFF9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DB4255640FB008CFFF9 /* libc++.tbd */; };
+		DCC90DBA25564101008CFFF9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DB925564101008CFFF9 /* libz.tbd */; };
+		DCC90DBF2556410B008CFFF9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DBE2556410B008CFFF9 /* OpenGLES.framework */; };
+		DCC90DC125564110008CFFF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DC025564110008CFFF9 /* QuartzCore.framework */; };
+		DCC90DC325564119008CFFF9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DC225564119008CFFF9 /* SystemConfiguration.framework */; };
+		DCC90DC525564121008CFFF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC90DC425564121008CFFF9 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC6BADA125563F5A00B4DC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC6BAD7F25563F5800B4DC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC6BAD8625563F5800B4DC32;
+			remoteInfo = AdventureMap;
+		};
+		DC6BADAC25563F5A00B4DC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC6BAD7F25563F5800B4DC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC6BAD8625563F5800B4DC32;
+			remoteInfo = AdventureMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC6BAD8725563F5800B4DC32 /* AdventureMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6BAD8A25563F5800B4DC32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC6BAD8C25563F5800B4DC32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC6BAD8E25563F5800B4DC32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC6BAD9125563F5800B4DC32 /* AdventureMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdventureMap.xcdatamodel; sourceTree = "<group>"; };
+		DC6BAD9325563F5A00B4DC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6BAD9625563F5A00B4DC32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC6BAD9925563F5A00B4DC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6BAD9B25563F5A00B4DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6BADA025563F5A00B4DC32 /* AdventureMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6BADA425563F5A00B4DC32 /* AdventureMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureMapTests.swift; sourceTree = "<group>"; };
+		DC6BADA625563F5A00B4DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6BADAB25563F5A00B4DC32 /* AdventureMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6BADAF25563F5A00B4DC32 /* AdventureMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureMapUITests.swift; sourceTree = "<group>"; };
+		DC6BADB125563F5A00B4DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC90D982556401F008CFFF9 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		DCC90D9A25564039008CFFF9 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		DCC90D9C2556409C008CFFF9 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		DCC90DA2255640AD008CFFF9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DCC90DA4255640B5008CFFF9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DCC90DA6255640BE008CFFF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCC90DA8255640C5008CFFF9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		DCC90DAA255640D3008CFFF9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DCC90DAC255640DB008CFFF9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DCC90DAE255640E1008CFFF9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DCC90DB0255640E8008CFFF9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DCC90DB2255640F3008CFFF9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DCC90DB4255640FB008CFFF9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DCC90DB925564101008CFFF9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DCC90DBE2556410B008CFFF9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DCC90DC025564110008CFFF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DCC90DC225564119008CFFF9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DCC90DC425564121008CFFF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6BAD8425563F5800B4DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC90DC525564121008CFFF9 /* UIKit.framework in Frameworks */,
+				DCC90DC325564119008CFFF9 /* SystemConfiguration.framework in Frameworks */,
+				DCC90DC125564110008CFFF9 /* QuartzCore.framework in Frameworks */,
+				DCC90DBF2556410B008CFFF9 /* OpenGLES.framework in Frameworks */,
+				DCC90DBA25564101008CFFF9 /* libz.tbd in Frameworks */,
+				DCC90DB5255640FB008CFFF9 /* libc++.tbd in Frameworks */,
+				DCC90DB3255640F3008CFFF9 /* ImageIO.framework in Frameworks */,
+				DCC90DB1255640E8008CFFF9 /* GLKit.framework in Frameworks */,
+				DCC90DAF255640E1008CFFF9 /* CoreText.framework in Frameworks */,
+				DCC90DAD255640DB008CFFF9 /* CoreTelephony.framework in Frameworks */,
+				DCC90DAB255640D3008CFFF9 /* CoreLocation.framework in Frameworks */,
+				DCC90DA9255640C5008CFFF9 /* CoreImage.framework in Frameworks */,
+				DCC90DA7255640BE008CFFF9 /* CoreGraphics.framework in Frameworks */,
+				DCC90DA5255640B5008CFFF9 /* CoreData.framework in Frameworks */,
+				DCC90DA3255640AD008CFFF9 /* Accelerate.framework in Frameworks */,
+				DCC90D992556401F008CFFF9 /* GooglePlaces.framework in Frameworks */,
+				DCC90D9B25564039008CFFF9 /* GoogleMapsBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BAD9D25563F5A00B4DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BADA825563F5A00B4DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC6BAD7E25563F5800B4DC32 = {
+			isa = PBXGroup;
+			children = (
+				DCC90D9C2556409C008CFFF9 /* GooglePlaces.bundle */,
+				DCC90D9A25564039008CFFF9 /* GoogleMapsBase.framework */,
+				DCC90D982556401F008CFFF9 /* GooglePlaces.framework */,
+				DC6BAD8925563F5800B4DC32 /* AdventureMap */,
+				DC6BADA325563F5A00B4DC32 /* AdventureMapTests */,
+				DC6BADAE25563F5A00B4DC32 /* AdventureMapUITests */,
+				DC6BAD8825563F5800B4DC32 /* Products */,
+				DCC90DA1255640AC008CFFF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6BAD8825563F5800B4DC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BAD8725563F5800B4DC32 /* AdventureMap.app */,
+				DC6BADA025563F5A00B4DC32 /* AdventureMapTests.xctest */,
+				DC6BADAB25563F5A00B4DC32 /* AdventureMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6BAD8925563F5800B4DC32 /* AdventureMap */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BAD8A25563F5800B4DC32 /* AppDelegate.swift */,
+				DC6BAD8C25563F5800B4DC32 /* SceneDelegate.swift */,
+				DC6BAD8E25563F5800B4DC32 /* ContentView.swift */,
+				DC6BAD9325563F5A00B4DC32 /* Assets.xcassets */,
+				DC6BAD9825563F5A00B4DC32 /* LaunchScreen.storyboard */,
+				DC6BAD9B25563F5A00B4DC32 /* Info.plist */,
+				DC6BAD9025563F5800B4DC32 /* AdventureMap.xcdatamodeld */,
+				DC6BAD9525563F5A00B4DC32 /* Preview Content */,
+			);
+			path = AdventureMap;
+			sourceTree = "<group>";
+		};
+		DC6BAD9525563F5A00B4DC32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BAD9625563F5A00B4DC32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC6BADA325563F5A00B4DC32 /* AdventureMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BADA425563F5A00B4DC32 /* AdventureMapTests.swift */,
+				DC6BADA625563F5A00B4DC32 /* Info.plist */,
+			);
+			path = AdventureMapTests;
+			sourceTree = "<group>";
+		};
+		DC6BADAE25563F5A00B4DC32 /* AdventureMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BADAF25563F5A00B4DC32 /* AdventureMapUITests.swift */,
+				DC6BADB125563F5A00B4DC32 /* Info.plist */,
+			);
+			path = AdventureMapUITests;
+			sourceTree = "<group>";
+		};
+		DCC90DA1255640AC008CFFF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC90DC425564121008CFFF9 /* UIKit.framework */,
+				DCC90DC225564119008CFFF9 /* SystemConfiguration.framework */,
+				DCC90DC025564110008CFFF9 /* QuartzCore.framework */,
+				DCC90DBE2556410B008CFFF9 /* OpenGLES.framework */,
+				DCC90DB925564101008CFFF9 /* libz.tbd */,
+				DCC90DB4255640FB008CFFF9 /* libc++.tbd */,
+				DCC90DB2255640F3008CFFF9 /* ImageIO.framework */,
+				DCC90DB0255640E8008CFFF9 /* GLKit.framework */,
+				DCC90DAE255640E1008CFFF9 /* CoreText.framework */,
+				DCC90DAC255640DB008CFFF9 /* CoreTelephony.framework */,
+				DCC90DAA255640D3008CFFF9 /* CoreLocation.framework */,
+				DCC90DA8255640C5008CFFF9 /* CoreImage.framework */,
+				DCC90DA6255640BE008CFFF9 /* CoreGraphics.framework */,
+				DCC90DA4255640B5008CFFF9 /* CoreData.framework */,
+				DCC90DA2255640AD008CFFF9 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6BAD8625563F5800B4DC32 /* AdventureMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6BADB425563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMap" */;
+			buildPhases = (
+				DC6BAD8325563F5800B4DC32 /* Sources */,
+				DC6BAD8425563F5800B4DC32 /* Frameworks */,
+				DC6BAD8525563F5800B4DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdventureMap;
+			productName = AdventureMap;
+			productReference = DC6BAD8725563F5800B4DC32 /* AdventureMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC6BAD9F25563F5A00B4DC32 /* AdventureMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6BADB725563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMapTests" */;
+			buildPhases = (
+				DC6BAD9C25563F5A00B4DC32 /* Sources */,
+				DC6BAD9D25563F5A00B4DC32 /* Frameworks */,
+				DC6BAD9E25563F5A00B4DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC6BADA225563F5A00B4DC32 /* PBXTargetDependency */,
+			);
+			name = AdventureMapTests;
+			productName = AdventureMapTests;
+			productReference = DC6BADA025563F5A00B4DC32 /* AdventureMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC6BADAA25563F5A00B4DC32 /* AdventureMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6BADBA25563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMapUITests" */;
+			buildPhases = (
+				DC6BADA725563F5A00B4DC32 /* Sources */,
+				DC6BADA825563F5A00B4DC32 /* Frameworks */,
+				DC6BADA925563F5A00B4DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC6BADAD25563F5A00B4DC32 /* PBXTargetDependency */,
+			);
+			name = AdventureMapUITests;
+			productName = AdventureMapUITests;
+			productReference = DC6BADAB25563F5A00B4DC32 /* AdventureMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6BAD7F25563F5800B4DC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					DC6BAD8625563F5800B4DC32 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					DC6BAD9F25563F5A00B4DC32 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = DC6BAD8625563F5800B4DC32;
+					};
+					DC6BADAA25563F5A00B4DC32 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = DC6BAD8625563F5800B4DC32;
+					};
+				};
+			};
+			buildConfigurationList = DC6BAD8225563F5800B4DC32 /* Build configuration list for PBXProject "AdventureMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC6BAD7E25563F5800B4DC32;
+			productRefGroup = DC6BAD8825563F5800B4DC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6BAD8625563F5800B4DC32 /* AdventureMap */,
+				DC6BAD9F25563F5A00B4DC32 /* AdventureMapTests */,
+				DC6BADAA25563F5A00B4DC32 /* AdventureMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6BAD8525563F5800B4DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC90D9D2556409C008CFFF9 /* GooglePlaces.bundle in Resources */,
+				DC6BAD9A25563F5A00B4DC32 /* LaunchScreen.storyboard in Resources */,
+				DC6BAD9725563F5A00B4DC32 /* Preview Assets.xcassets in Resources */,
+				DC6BAD9425563F5A00B4DC32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BAD9E25563F5A00B4DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BADA925563F5A00B4DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC6BAD8325563F5800B4DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6BAD8B25563F5800B4DC32 /* AppDelegate.swift in Sources */,
+				DC6BAD9225563F5800B4DC32 /* AdventureMap.xcdatamodeld in Sources */,
+				DC6BAD8D25563F5800B4DC32 /* SceneDelegate.swift in Sources */,
+				DC6BAD8F25563F5800B4DC32 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BAD9C25563F5A00B4DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6BADA525563F5A00B4DC32 /* AdventureMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6BADA725563F5A00B4DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6BADB025563F5A00B4DC32 /* AdventureMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC6BADA225563F5A00B4DC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC6BAD8625563F5800B4DC32 /* AdventureMap */;
+			targetProxy = DC6BADA125563F5A00B4DC32 /* PBXContainerItemProxy */;
+		};
+		DC6BADAD25563F5A00B4DC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC6BAD8625563F5800B4DC32 /* AdventureMap */;
+			targetProxy = DC6BADAC25563F5A00B4DC32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC6BAD9825563F5A00B4DC32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6BAD9925563F5A00B4DC32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC6BADB225563F5A00B4DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC6BADB325563F5A00B4DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC6BADB525563F5A00B4DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AdventureMap/Preview Content\"";
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AdventureMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC6BADB625563F5A00B4DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AdventureMap/Preview Content\"";
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AdventureMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC6BADB825563F5A00B4DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				INFOPLIST_FILE = AdventureMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventureMap.app/AdventureMap";
+			};
+			name = Debug;
+		};
+		DC6BADB925563F5A00B4DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				INFOPLIST_FILE = AdventureMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventureMap.app/AdventureMap";
+			};
+			name = Release;
+		};
+		DC6BADBB25563F5A00B4DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				INFOPLIST_FILE = AdventureMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdventureMap;
+			};
+			name = Debug;
+		};
+		DC6BADBC25563F5A00B4DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYE3Q5H9M8;
+				INFOPLIST_FILE = AdventureMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Stephen.AdventureMap.AdventureMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdventureMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC6BAD8225563F5800B4DC32 /* Build configuration list for PBXProject "AdventureMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6BADB225563F5A00B4DC32 /* Debug */,
+				DC6BADB325563F5A00B4DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6BADB425563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6BADB525563F5A00B4DC32 /* Debug */,
+				DC6BADB625563F5A00B4DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6BADB725563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6BADB825563F5A00B4DC32 /* Debug */,
+				DC6BADB925563F5A00B4DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6BADBA25563F5A00B4DC32 /* Build configuration list for PBXNativeTarget "AdventureMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6BADBB25563F5A00B4DC32 /* Debug */,
+				DC6BADBC25563F5A00B4DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC6BAD9025563F5800B4DC32 /* AdventureMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC6BAD9125563F5800B4DC32 /* AdventureMap.xcdatamodel */,
+			);
+			currentVersion = DC6BAD9125563F5800B4DC32 /* AdventureMap.xcdatamodel */;
+			path = AdventureMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC6BAD7F25563F5800B4DC32 /* Project object */;
+}
