@@ -17,6 +17,8 @@
 		DC6BAD9A25563F5A00B4DC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6BAD9825563F5A00B4DC32 /* LaunchScreen.storyboard */; };
 		DC6BADA525563F5A00B4DC32 /* AdventureMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BADA425563F5A00B4DC32 /* AdventureMapTests.swift */; };
 		DC6BADB025563F5A00B4DC32 /* AdventureMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BADAF25563F5A00B4DC32 /* AdventureMapUITests.swift */; };
+		DCC513032556C9E000F07793 /* NewAdventureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC513022556C9E000F07793 /* NewAdventureView.swift */; };
+		DCC513082556CABB00F07793 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC513072556CABB00F07793 /* ProfileView.swift */; };
 		DCC90E0B255656F9008CFFF9 /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC90E0A255656F9008CFFF9 /* GoogleMapsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		DC6BADAB25563F5A00B4DC32 /* AdventureMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6BADAF25563F5A00B4DC32 /* AdventureMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureMapUITests.swift; sourceTree = "<group>"; };
 		DC6BADB125563F5A00B4DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC513022556C9E000F07793 /* NewAdventureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdventureView.swift; sourceTree = "<group>"; };
+		DCC513072556CABB00F07793 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DCC90E0A255656F9008CFFF9 /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +132,8 @@
 				DC6BAD9B25563F5A00B4DC32 /* Info.plist */,
 				DC6BAD9025563F5800B4DC32 /* AdventureMap.xcdatamodeld */,
 				DC6BAD9525563F5A00B4DC32 /* Preview Content */,
+				DCC513022556C9E000F07793 /* NewAdventureView.swift */,
+				DCC513072556CABB00F07793 /* ProfileView.swift */,
 			);
 			path = AdventureMap;
 			sourceTree = "<group>";
@@ -344,6 +350,8 @@
 				DCC90E0B255656F9008CFFF9 /* GoogleMapsView.swift in Sources */,
 				DC6BAD9225563F5800B4DC32 /* AdventureMap.xcdatamodeld in Sources */,
 				DC6BAD8D25563F5800B4DC32 /* SceneDelegate.swift in Sources */,
+				DCC513032556C9E000F07793 /* NewAdventureView.swift in Sources */,
+				DCC513082556CABB00F07793 /* ProfileView.swift in Sources */,
 				DC6BAD8F25563F5800B4DC32 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
