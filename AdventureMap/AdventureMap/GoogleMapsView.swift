@@ -4,6 +4,7 @@
 //
 //  Created by Stephen Bowen on 11/6/20.
 //
+// Completed Map showing current user location
 
 import SwiftUI
 import GooglePlaces
@@ -30,6 +31,9 @@ struct GoogleMapsView: UIViewRepresentable {
         findLocation()
         let camera = GMSCameraPosition.camera(withLatitude: locationManager.location!.coordinate.latitude, longitude: locationManager.location!.coordinate.longitude, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        let userLocationMarker = GMSMarker(position: locationManager.location!.coordinate)
+        userLocationMarker.icon = UIImage(named: "Jerry")
+        userLocationMarker.map = mapView
         return mapView
     }
     
