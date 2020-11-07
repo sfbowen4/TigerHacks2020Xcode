@@ -12,48 +12,57 @@ import CoreLocation
 
 struct ContentView: View {
     
-    @State private var isShowingProfile = false
-    @State private var isShowingNewAdventure = false
     var CurrentViewTitle = "Adventure Map"
+    @State private var isShowingProfile = false
+    @State private var isShowingStartNewAdventure = false
     
     var body: some View {
         
         NavigationView {
         VStack {
             GoogleMapsView()
-        }.frame(height: 1000)
+        }
         .edgesIgnoringSafeArea(.top)
+        .edgesIgnoringSafeArea(.bottom)
         .navigationBarTitle(CurrentViewTitle, displayMode: .inline)
         .navigationBarItems(leading:
                     Button(action: {
                         isShowingProfile = false
-                        isShowingNewAdventure = !(isShowingNewAdventure)
+                        isShowingStartNewAdventure = !(isShowingStartNewAdventure)
                     }) {
-                        if isShowingNewAdventure
+                        if isShowingStartNewAdventure
                         { Image(systemName: "x.circle.fill").imageScale(.large) }
                         else
                         { Image(systemName: "plus.circle.fill").imageScale(.large) }
                     },
                 trailing:
                     Button(action: {
-                        isShowingNewAdventure = false
+                        isShowingStartNewAdventure = false
                         isShowingProfile = !(isShowingProfile)
                     }) {
                         Image("JerryProfile").imageScale(.small)
                     })
         }
-            if isShowingNewAdventure
+            if isShowingStartNewAdventure
             {
-                NewAdventureView().frame(width: 200, height: 600)
+                GeometryReader { metrics in
+                StartNewAdventureView().edgesIgnoringSafeArea(.top)
+                                  .edgesIgnoringSafeArea(.bottom)
+                    .frame(height: metrics.size.height * 0.80)
+                }
             }
         
             if isShowingProfile
             {
-                ProfileView().frame(width: 200, height: 600)
+                GeometryReader { metrics in
+                ProfileView().edgesIgnoringSafeArea(.top)
+                             .edgesIgnoringSafeArea(.bottom)
+                    .frame(height: metrics.size.height * 0.80)
+                }
             }
             
+        }
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
