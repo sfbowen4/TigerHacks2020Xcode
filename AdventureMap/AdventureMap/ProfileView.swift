@@ -11,22 +11,22 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack(){
+        Image("JerryFace").offset(y : -180)
+        VStack(alignment: .center){
             Text("Jerry Bot").bold().font(.title).padding(1)
-            Text("JerryBot707").italic().font(.title2).padding(1)
-            
-            
+            Text("JerryBot707").italic().font(.title3).padding(1)
             HStack()
             {
-                Text("Total Points:").bold()
+                Text("Adventure Points:").bold()
                 Text("157")
             }.padding(1)
+            .frame(alignment: .center)
             HStack()
             {
                 Text("Total Adventures:").bold()
                 Text("7")
             }
-        }
+        }.offset(y : 10)
     }
 }
 

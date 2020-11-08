@@ -12,7 +12,7 @@ import CoreLocation
 
 struct ContentView: View {
     
-    var CurrentViewTitle = "Adventure Map"
+    var CurrentViewTitle = "GoAdventure!"
     @State private var isShowingProfile = false
     @State private var isShowingStartNewAdventure = false
     
@@ -57,7 +57,7 @@ struct ContentView: View {
                 GeometryReader { metrics in
                 ProfileView().edgesIgnoringSafeArea(.top)
                              .edgesIgnoringSafeArea(.bottom)
-                    .frame(height: metrics.size.height * 0.80)
+                    .frame(width: metrics.size.width, height: metrics.size.height * 0.80)
                 }
             }
             

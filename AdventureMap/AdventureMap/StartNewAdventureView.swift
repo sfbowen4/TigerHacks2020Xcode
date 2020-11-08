@@ -9,19 +9,32 @@ import SwiftUI
 
 struct StartNewAdventureView: View {
     
-    @State var userDefinedDistance : Double = 0.0
+    @State var userDefinedDistance : Float = 0.0
     @State var StartNewAdventure = true
+    @State var showDistanceAlert = false
+    
+    func AdventureStart(){
+        if userDefinedDistance == 0.0 {
+            showDistanceAlert = true
+        }
+        else {
+            StartNewAdventure = false
+        }
+    }
     
     var body: some View {
         
         if StartNewAdventure {
         
         VStack(alignment: .center) {
-            Text("How far are you willing to adventure?").font(.title3)
+            Text("How far do you want to go?").font(.title3)
             Slider(value : $userDefinedDistance, in: 0...5, step: 0.25).padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             Text("\(userDefinedDistance, specifier: "%.2f") miles").font(.largeTitle).padding(10)
             Button(action: {
-                StartNewAdventure = false
+                do {
+                    sleep(1)
+                }
+                AdventureStart()
             }) {
                 HStack {
                     Image(systemName: "figure.walk.circle.fill")
@@ -34,12 +47,14 @@ struct StartNewAdventureView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(40)
-                }
+            } .alert(isPresented: $showDistanceAlert){
+                Alert(title: Text("Distance Error"), message: Text("Please select a distance other than zero."))
+            }
             }
         }
         
         else {
-            VStack() {
+            VStack(alignment: .center) {
                 PickNewAdventureView(userDefinedDistance: userDefinedDistance)
             }
         }

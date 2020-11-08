@@ -34,14 +34,14 @@ struct GoogleMapsView: UIViewRepresentable {
         
         //Create map and view
         let camera = GMSCameraPosition.camera(withLatitude: locationManager.location!.coordinate.latitude,
-                                              longitude: locationManager.location!.coordinate.longitude, zoom: 6.0)
+                                              longitude: locationManager.location!.coordinate.longitude, zoom: zoom)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        mapView.isTrafficEnabled = true
         
         //Show user with profile picture
         let userLocationMarker = GMSMarker(position: locationManager.location!.coordinate)
         userLocationMarker.icon = UIImage(named: "Jerry")
         userLocationMarker.map = mapView
+
         return mapView
     }
     
